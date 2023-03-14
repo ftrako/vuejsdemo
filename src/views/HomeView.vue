@@ -1,11 +1,11 @@
 <script setup>
-import {onMounted} from "vue";
-import axios from "axios"
-
-onMounted(()=>{
-})
 </script>
 
 <template>
-<h3>主页</h3>
+  <ul>
+    <li>
+      <router-link to="/store">store示例</router-link>
+    </li>
+  </ul>
+  <router-view/>
 </template>

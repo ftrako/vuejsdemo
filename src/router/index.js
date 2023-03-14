@@ -9,6 +9,10 @@ const routes = [
         component: HomeView
     },
     {
+      path: "/store",
+      component: ()=>import("../views/storeview/StoreView.vue")
+    },
+    {
         path: "/about",
         redirect: "/about/1",
         component: ()=>import("../views/AboutView.vue"),
