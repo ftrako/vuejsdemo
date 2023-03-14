@@ -5,12 +5,23 @@ import AboutView from "../views/AboutView.vue"
 
 const routes = [
     {
-        path: "/",
+        path: "",
         component: HomeView
     },
     {
         path: "/about",
-        component: AboutView
+        redirect: "/about/1",
+        component: ()=>import("../views/AboutView.vue"),
+        children: [
+            {
+                path: "1",
+                component: ()=>import("../views/AboutView1.vue"),
+            },
+            {
+                path: "2",
+                component: ()=>import("../views/AboutView2.vue"),
+            }
+        ]
     }
 ]
 
