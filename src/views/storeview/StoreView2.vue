@@ -1,8 +1,25 @@
 <script setup>
-import {ref} from 'vue'
+import {ref,reactive, toRefs} from 'vue'
 import store from '../../store'
 
+
 let c = ref(store.state.counter)
+
+const data = reactive({
+  obj: {
+    id: "10001",
+    name: "zhangsan"
+  }
+})
+
+const {obj} = toRefs(data)
+
+const data2 = {id:"1", name:"lisi"}
+
+obj.id = data2.id
+obj.name = data2.name
+
+console.log("id: "+obj.id+", name: "+obj.name)
 
 </script>
 
