@@ -17,6 +17,10 @@ const routes = [
         component: ()=>import("../views/ElementPlusView.vue")
     },
     {
+        path: "/test",
+        component: ()=>import("../views/TestView.vue")
+    },
+    {
         path: "/about",
         redirect: "/about/1",
         component: ()=>import("../views/AboutView.vue"),
