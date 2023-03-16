@@ -6,5 +6,5 @@ export default defineStore("main", {
             number: 1,
             name: "cdj"
         }
-    }
+    },
 })

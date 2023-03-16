@@ -9,6 +9,8 @@
   <div>
     <button @click="handler">点击</button>
   </div>
+  <div>
+  </div>
 </template>
 
 <script setup>
