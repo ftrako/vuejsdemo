@@ -1,6 +1,6 @@
 <script setup>
 import {ref,reactive, toRefs} from 'vue'
-import store from '../../store'
+import store from '../../store/vuex'
 
 
 let c = ref(store.state.counter)

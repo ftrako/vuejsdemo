@@ -1,7 +1,10 @@
-import {createStore} from "vuex";
+import {defineStore} from "pinia";
 
-export default createStore({
-    state: {
-        counter: 1
+export default defineStore("main", {
+    state: () => {
+        return {
+            number: 1,
+            name: "cdj"
+        }
     }
 })

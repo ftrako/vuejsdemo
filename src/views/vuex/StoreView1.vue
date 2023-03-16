@@ -1,6 +1,6 @@
 <script setup>
 import {ref} from 'vue'
-import store from '../../store'
+import store from '../../store/vuex'
 
 let c = store.state.counter
 

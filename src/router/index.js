@@ -10,7 +10,7 @@ const routes = [
     },
     {
       path: "/store",
-      component: ()=>import("../views/storeview/StoreView.vue")
+      component: ()=>import("../views/vuex/StoreView.vue")
     },
     {
         path: "/elementplus",
