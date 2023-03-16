@@ -10,7 +10,8 @@ const tokenStore = defineStore("main", {
     persist: {
         enabled: true,
         strategies: [
-            {storage: localStorage, paths: ["token"]}
+            {storage: localStorage, paths: ["token"]},
+            {storage: sessionStorage, paths: ["count"]}
         ]
     },
     actions: {
